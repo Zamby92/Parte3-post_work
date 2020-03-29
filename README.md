@@ -5,20 +5,24 @@ Aplicar los conceptos de la sesión a tu proyecto personal. Automatizar las tare
 ## Se busca el directorio en el que estamos trabajando 
 >>pwd
 
-##Vamos a elaborar un archivo en el escritorio, si en dado caso que estemos trabajando en otra sección que no sea el escritorio usar
->>cd  ..
+##Nos encontramos en la misma carpeta, solo usaremos ls, para confirmar que datos tenemos o que carpetas tenemos
+>> ls
 
-## Se realiza una carpeta donde se subiran  los archivo del proyecto.
->> mkdir Mi_proyecto
+## Entremos a la carpeta Mi_Proyecto
+>>cd Mi_Proyecto
 
-#NOTA*  se quizo usar curl para extraer este archivo de índice delictivo https://drive.google.com/file/d/19EWWRrPQUpOIPP5CQCbAe2MxF-yeF4yD/view
-# como no se pude se hizo la descarga manual que automaticamente
+##Volvemos a usar ls para saber que carpetas tenemos
+>>ls
 
-## En dado caso que  las descarga se haya realizado en otro carpeta usar mv
+##Tenemos dos carpeta, la vista en clase y la de nuestro proyecto de criminalidad
+#NOTA*  se quizo usar curl para extraer este archivo de índice delictivo https://drive.google.com/file/d/19EWWRrPQUpOIPP5CQCbAe2MxF-yeF4yD/view, sin embargo no funciono, y se extrajo de manera normal, en el postwork anterior, se menciona como.
+>> cd Municipal-Delitos-2015-2020_ene2020
 
-## Abrir con "unzip"
- >> unzip  Municipal-Delitos-2015-2020_ene2020.zip 
- 
- ## Eliminar el zip
- rm Municipal-Delitos-2015-2020_ene2020.zip
+##Observamos la inforación en alguna de las carpeta que sean csv
+head Criminalidad-2015-2020.csv
 
+##Se realiza cat, el cat sirve para ver la información del contenido, no fue recomendable hacerlo, porque tiene mucha información
+cat Criminalidad-2015-2020.csv
+
+##Antes de usar el cat es recomencable, usar el wc, para contar las observaciones, si son mucha no hacer cat
+wc Crimininalidad-2015-2020.csv
