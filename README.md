@@ -19,10 +19,10 @@ Aplicar los conceptos de la sesión a tu proyecto personal. Automatizar las tare
 >> cd Municipal-Delitos-2015-2020_ene2020
 
 ##Observamos la inforación en alguna de las carpeta que sean csv
-head Criminalidad-2015-2020.csv
+>>head Criminalidad-2015-2020.csv
 
 ##Se realiza cat, el cat sirve para ver la información del contenido, no fue recomendable hacerlo, porque tiene mucha información
-cat Criminalidad-2015-2020.csv
+>>cat Criminalidad-2015-2020.csv
 
 ##Antes de usar el cat es recomencable, usar el wc, para contar las observaciones, si son mucha no hacer cat
-wc Crimininalidad-2015-2020.csv
+>>wc Crimininalidad-2015-2020.csv
